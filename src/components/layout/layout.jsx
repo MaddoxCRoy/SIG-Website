@@ -16,8 +16,10 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0A0D12] text-slate-100">
-      {/* Navigation */}
+    <div className="min-h-screen text-slate-100">
+      {/* =====================
+          Navigation
+         ===================== */}
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -39,7 +41,7 @@ export default function Layout({ children }) {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10">
             {["About", "Divisions", "MStAR Fund", "Join"].map((item) => (
               <a
@@ -52,10 +54,11 @@ export default function Layout({ children }) {
             ))}
           </div>
 
-          {/* Mobile Button */}
+          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 text-slate-400 hover:text-white"
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -87,8 +90,12 @@ export default function Layout({ children }) {
         </AnimatePresence>
       </motion.header>
 
-      {/* Page Content */}
-      <div className="pt-24">{children}</div>
+      {/* =====================
+          Page Content
+         ===================== */}
+      <main className="pt-24">
+          {children}
+      </main>
     </div>
   );
 }
