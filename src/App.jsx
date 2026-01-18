@@ -1,20 +1,26 @@
-import Hero from "./components/home/Hero";
-import About from "./components/home/About";
-import Divisions from "./components/home/Divisions";
-import MStarFund from "./components/home/MStarFund";
-import Footer from "./components/home/Footer";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/layout";
+import ScrollToTop from "./components/layout/ScrollToTop";
+
+import AboutPage from "./components/about/AboutPage";
+import HomePage from "./components/home/HomePage";
+import MStarPage from "./components/mstar/MStarPage";
+import QuantPage from "./components/quant/QuantPage";
+import FundamentalPage from "./components/fundamental/FundamentalPage";
 
 export default function App() {
   return (
-    <Layout>
-      <Hero />
-      <About />
-      <Divisions />
-      <MStarFund />
-      <Footer />
-    </Layout>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/mstar" element={<MStarPage />} />
+          <Route path="/quantitative" element={<QuantPage />} />
+          <Route path="/fundamental" element={<FundamentalPage />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
-
-

@@ -1,5 +1,8 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+
+
 
 export default function About() {
   const ref = useRef(null);
@@ -33,28 +36,57 @@ export default function About() {
             className="md:col-span-9"
           >
             <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-light leading-[1.25] text-[#1F2933]">
-              We cultivate the next generation of investment professionals
-              through rigorous research and active portfolio management.
+              Developing the next generation of investment professionals.
             </h2>
 
             <div className="mt-8 grid md:grid-cols-2 gap-10">
               <p className="text-[#4B5563] leading-relaxed">
                 Scarlet Investment Group brings together Ohio State’s most driven
-                students to conduct institutional-grade research across public
-                equities and quantitative strategies. Members develop frameworks
-                used by leading asset managers worldwide.
+                students to conduct research across
+                equities and quantitative strategies.
+                Members become thoughtful and well-rounded leaders through applied research and collaboration.
               </p>
 
               <p className="text-[#4B5563] leading-relaxed">
                 Through our flagship <span className="text-[#9E1B32]">MStAR Fund</span>,
-                members gain hands-on experience managing real capital,
-                presenting investment theses, and defending positions—skills
-                that translate directly to careers in asset management, private
-                equity, and hedge funds.
+                members gain hands-on experience in managing capital,
+                presenting investment theses, developing strategies, and defending their decisions.
+
               </p>
             </div>
           </motion.div>
         </div>
+
+        {/* About Page CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={isInView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.45, ease: "easeOut" }}
+          className="mt-12"
+        >
+          <div className="grid md:grid-cols-12 gap-12">
+            {/* Empty column to match label */}
+            <div className="md:col-span-3" />
+
+            {/* CTA aligned with text column */}
+            <div className="md:col-span-9">
+              <Link
+                to="/about"
+                className="
+          inline-flex items-center
+          font-secondary text-sm tracking-wide
+          text-[#9E1B32]
+          hover:text-[#7A1626]
+          transition-colors
+        "
+              >
+                Learn more about Scarlet Investment Group →
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
+
 
         {/* Stats */}
         <motion.div
@@ -65,9 +97,9 @@ export default function About() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             {[
-              { value: "40+", label: "Active Members" },
+              { value: "50+", label: "Active Members" },
               { value: "2", label: "Investment Divisions" },
-              { value: "$25K", label: "AUM" },
+              { value: "Semesterly", label: "Journal Publication" },
               { value: "100%", label: "Student-Led" },
             ].map((stat) => (
               <div key={stat.label}>
@@ -82,6 +114,8 @@ export default function About() {
           </div>
         </motion.div>
       </div>
+
+
     </section>
   );
 }

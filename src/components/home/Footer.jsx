@@ -20,13 +20,11 @@ export default function Footer() {
           className="py-20 md:py-24 text-center"
         >
           <h2 className="text-2xl md:text-3xl font-light text-[#1F2933]">
-            Join the next class
+            Join us.
           </h2>
 
           <p className="mt-4 max-w-xl mx-auto text-[#4B5563] leading-relaxed">
-            We recruit exceptional students each semester who demonstrate
-            intellectual curiosity, analytical rigor, and a passion for
-            financial markets.
+            Applications for Spring 2026 recruitment has not been opened yet. Check back soon.
           </p>
 
           {/* Apply / Contact Button */}
