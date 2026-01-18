@@ -25,7 +25,8 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex items-center justify-center overflow-hidden bg-[#FFFFF0]"
+      id="hero"
+      className="relative flex items-center justify-center overflow-hidden bg-[#FFFFF0] scroll-mt-24"
       style={{ minHeight: "calc(100vh - 96px)" }}
     >
       {/* =====================
@@ -52,7 +53,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Soft ivory wash (keeps text readable) */}
+      {/* Soft ivory wash */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#FFFFF0]/45 via-[#FFFFF0]/65 to-[#FFFFF0]" />
 
       {/* =====================
