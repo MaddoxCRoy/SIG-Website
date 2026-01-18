@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Layers, Target, Shield, Activity } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const pillars = [
   {
@@ -39,9 +40,6 @@ export default function MStarFund() {
       id="mstar"
       className="relative py-24 md:py-32 bg-[#FFFFF0] overflow-hidden"
     >
-      {/* Subtle scarlet accent */}
-      <div className="absolute inset-y-0 right-0 w-1/2" />
-
       <div className="relative max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-12 gap-14 items-start">
           {/* Left: Fund Identity */}
@@ -64,30 +62,52 @@ export default function MStarFund() {
             </p>
 
             <p className="mt-8 max-w-md text-[#4B5563] leading-relaxed">
-              The <span className="text-[#9E1B32]">MStAR Fund</span> represents
-              the culmination of SIG’s research capabilities—a unified paper
-              portfolio where both fundamental and quantitative teams deploy
-              their highest-conviction ideas within a disciplined risk
-              framework.
+              The <span className="text-[#9E1B32]">MStAR Fund</span> is the
+              decision-making core of SIG. Members manage a paper portfolio where
+              their research is tested within the environment of the markets.
+              The fund exists to force judgment under uncertainty, requiring
+              members to weigh evidence, constraints, and tradeoffs in a
+              portfolio context.
             </p>
 
-            {/* Fund Metrics — Scarlet */}
-            <div className="mt-10 grid grid-cols-2 gap-6 bg-[#7A1626] p-6">
-              <div>
-                <div className="text-xl font-light text-[#FFFFF0]">
-                  Long / Short
+            {/* Fund Metrics — CTA */}
+            <Link
+              to="/mstar"
+              className="
+                mt-10 block
+                transition-transform duration-300
+                hover:-translate-y-[2px]
+                hover:shadow-[0_10px_24px_rgba(0,0,0,0.25)]
+                focus:outline-none
+              "
+            >
+              <div className="grid grid-cols-2 gap-6 bg-[#7A1626] p-6">
+                <div>
+                  <div className="text-xl font-light text-[#FFFFF0]">
+                    Long / Short
+                  </div>
+                  <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
+                    Equity Strategy
+                  </div>
                 </div>
-                <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
-                  Equity Strategy
+
+                <div>
+                  <div className="text-xl font-light text-[#FFFFF0]">
+                    Active
+                  </div>
+                  <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
+                    Management Type
+                  </div>
+                </div>
+
+                {/* CTA hint */}
+                <div className="col-span-2 pt-4 border-t border-[#FFFFF0]/20">
+                  <span className="font-secondary text-xs tracking-wide text-[#FFFFF0]/70">
+                    Explore the MStAR Fund →
+                  </span>
                 </div>
               </div>
-              <div>
-                <div className="text-xl font-light text-[#FFFFF0]">Paper</div>
-                <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
-                  Trading Format
-                </div>
-              </div>
-            </div>
+            </Link>
           </motion.div>
 
           {/* Right: Pillars */}
@@ -121,7 +141,7 @@ export default function MStarFund() {
               ))}
             </div>
 
-            {/* Philosophy Quote (kept light for contrast) */}
+            {/* Philosophy Quote */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
@@ -129,12 +149,11 @@ export default function MStarFund() {
               className="mt-12 pl-6 border-l border-[#7A1626]/30"
             >
               <p className="italic text-[#4B5563] leading-relaxed max-w-lg">
-                “Our objective is not only to generate returns, but to develop
-                investment professionals who think rigorously about risk and
-                reward.”
+                “Develop investors who approach the markets with rigor,
+                discipline, and thoughtfulness.”
               </p>
               <p className="mt-4 font-secondary text-sm text-[#1F2933]">
-                — SIG Investment Philosophy
+                — SIG Philosophy
               </p>
             </motion.div>
           </motion.div>

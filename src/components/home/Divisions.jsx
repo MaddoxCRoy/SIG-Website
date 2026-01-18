@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { TrendingUp, BarChart3, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const divisions = [
   {
@@ -8,7 +9,7 @@ const divisions = [
     title: "Fundamental",
     subtitle: "Deep Value Research",
     description:
-      "Our fundamental analysts conduct bottom-up research across sectors, building detailed financial models and developing differentiated investment theses. The team focuses on identifying mispriced securities through rigorous due diligence and variant perception.",
+      "Our fundamental analysts conduct market research across sectors, building detailed financial models and developing differentiated investment theses. The team focuses on identifying mispriced securities through rigorous due diligence.",
     capabilities: [
       "Financial statement analysis",
       "Industry & competitive dynamics",
@@ -16,20 +17,22 @@ const divisions = [
       "Valuation frameworks",
     ],
     icon: TrendingUp,
+    path: "/fundamental",
   },
   {
     id: "quantitative",
     title: "Quantitative",
-    subtitle: "Systematic Strategies",
+    subtitle: "Systematic Research",
     description:
-      "The quantitative team develops systematic trading strategies using statistical analysis, machine learning, and alternative data. Members build and backtest models that identify market inefficiencies across asset classes.",
+      "The quantitative team applies systematic, data-driven thinking to investment research, decision-making, and strategy development, emphasizing structure, validation, and risk awareness.",
     capabilities: [
-      "Factor-based investing",
-      "Statistical arbitrage",
-      "Machine learning models",
-      "Alternative data analysis",
+      "Research design & validation",
+      "Systematic risk analysis",
+      "Data-driven decision support",
+      "Portfolio integration",
     ],
     icon: BarChart3,
+    path: "/quantitative",
   },
 ];
 
@@ -49,19 +52,19 @@ function DivisionCard({ division, index }) {
       }}
       className="group"
     >
-    <div
-      className="
-        relative h-full bg-[#7A1626] p-10 md:p-12 rounded-md overflow-hidden
-        transition-all duration-300
-        group-hover:bg-[#831A2C]
-        group-hover:-translate-y-[2px]
-        group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)]
-      "
-    >
-        {/* Subtle integration line (always visible) */}
+      <div
+        className="
+          relative h-full bg-[#7A1626] p-10 md:p-12 rounded-md overflow-hidden
+          transition-all duration-300
+          group-hover:bg-[#831A2C]
+          group-hover:-translate-y-[2px]
+          group-hover:shadow-[0_8px_20px_rgba(0,0,0,0.18)]
+        "
+      >
+        {/* Subtle integration line */}
         <div className="absolute inset-x-0 top-0 h-px bg-[#FFFFF0]/25" />
 
-        {/* Hover accent (clear + intentional) */}
+        {/* Hover accent */}
         <div className="absolute inset-x-0 top-0 h-px bg-[#9E1B32] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
         {/* Icon */}
@@ -96,10 +99,13 @@ function DivisionCard({ division, index }) {
         </ul>
 
         {/* CTA */}
-        <div className="mt-10 flex items-center gap-2 font-secondary text-sm text-[#FFFFF0]">
+        <Link
+          to={division.path}
+          className="mt-10 inline-flex items-center gap-2 font-secondary text-sm text-[#FFFFF0]"
+        >
           <span>Learn more</span>
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </div>
+        </Link>
       </div>
     </motion.div>
   );
@@ -127,9 +133,9 @@ export default function Divisions() {
             Our Structure
           </span>
           <h2 className="text-3xl md:text-4xl font-light text-[#1F2933] max-w-2xl">
-            Two distinct approaches.
+            Two pillars.
             <br />
-            One unified mission.
+            One mission.
           </h2>
         </motion.div>
 
