@@ -27,19 +27,14 @@ export default function MStarWhatItIs() {
                 >
                     <p className="text-[#4B5563] leading-relaxed max-w-xl">
                         The MStAR Fund is a student-managed paper portfolio that integrates
-                        research from across SIG into a unified decision environment.
+                        research from both teams of SIG into a unified decision environment.
                     </p>
 
                     <p className="text-[#4B5563] leading-relaxed max-w-xl">
-                        Portfolio decisions reflect tradeoffs, uncertainty, and risk
-                        awareness. Research is not treated as an abstract exercise — it
-                        carries responsibility.
+                        The fund allows members to turn their ideas into execution. The fund exists to give research consequence.
+                        Members implement strategies, express conviction, and observe how their decisions unfold in real market conditions.
                     </p>
 
-                    <p className="text-[#4B5563] leading-relaxed max-w-xl">
-                        The fund exists to anchor discussion, sharpen judgment, and force
-                        clarity around assumptions and consequences.
-                    </p>
                 </motion.div>
             </div>
         </section>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function MStarHero() {
     return (
-        <section className="relative pt-44 pb-36 overflow-hidden bg-[#FFFFF0]">
+        <section className="relative pt-44 pb-36 overflow-hidden bg-[#7A1626]">
             {/* Subtle background motion */}
             <motion.div
                 aria-hidden
@@ -21,7 +21,7 @@ export default function MStarHero() {
                     initial={{ opacity: 0, y: 28 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="text-[clamp(3.5rem,7vw,5.5rem)] font-light tracking-tight text-[#1F2933]"
+                    className="text-[clamp(3.5rem,7vw,5.5rem)] font-light tracking-tight text-[#FFFFF0]"
                 >
                     MStAR Fund
                 </motion.h1>
@@ -30,12 +30,19 @@ export default function MStarHero() {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
-                    className="mt-8 max-w-2xl text-[#4B5563] leading-relaxed"
+                    className="
+  mt-8
+  max-w-2xl
+  text-lg md:text-xl
+  italic
+  text-[#FFFFF0]/90
+  leading-normal
+"
+
                 >
-                    The MStAR Fund is where research becomes decisions. It serves as the
-                    focal point for judgment, accountability, and disciplined
-                    decision-making across Scarlet Investment Group.
+                    Where research meets execution
                 </motion.p>
+
             </div>
         </section>
     );

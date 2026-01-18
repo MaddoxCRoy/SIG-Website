@@ -32,7 +32,7 @@ export default function JournalCurrentEdition() {
                         The inaugural edition of the SIG Research Journal is currently being
                         developed. This edition will synthesize research produced across
                         fundamental, quantitative, and macro-focused work during the
-                        semester.
+                        Spring 2026 semester.
                     </p>
 
                     <p className="mt-4 text-[#4B5563] leading-relaxed max-w-xl">
