@@ -73,7 +73,7 @@ export default function Layout() {
     {
       label: "Research Journal",
       scrollTo: "/#journal",
-      dropdown: [{ label: "Learn More", to: "/journal" }],
+      dropdown: [{ label: "Learn More", to: "/researchjournal" }],
     },
     {
       label: "Join",
