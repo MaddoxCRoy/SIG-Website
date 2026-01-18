@@ -1,33 +1,8 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { BookOpen, FileText, Users, Layers } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const highlights = [
-    {
-        icon: FileText,
-        title: "Institutional-Grade Research",
-        description:
-            "Semesterly publication featuring original equity research, quantitative strategies, and market analysis produced by SIG members.",
-    },
-    {
-        icon: Layers,
-        title: "Unified Research Platform",
-        description:
-            "Integrates fundamental analysis, systematic research, macro commentary, and club initiatives into a single cohesive publication.",
-    },
-    {
-        icon: Users,
-        title: "Member Showcase",
-        description:
-            "Provides a tangible, resume-worthy deliverable that demonstrates technical skill, intellectual rigor, and collaboration.",
-    },
-    {
-        icon: BookOpen,
-        title: "Enduring Record",
-        description:
-            "Preserves SIG’s intellectual output semester after semester as a growing body of student-produced investment research.",
-    },
-];
 
 export default function ResearchJournal() {
     const ref = useRef(null);
@@ -70,31 +45,7 @@ export default function ResearchJournal() {
                             captures the highest-quality work produced by our members across
                             fundamental research, quantitative development,
                             and macroeconomic analysis.
-                        </p>
-
-                        {/* Highlights Grid */}
-                        <div className="mt-14 grid sm:grid-cols-2 gap-10">
-                            {highlights.map((item, index) => (
-                                <motion.div
-                                    key={item.title}
-                                    initial={{ opacity: 0, y: 24 }}
-                                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                                    transition={{
-                                        duration: 0.6,
-                                        delay: 0.25 + index * 0.1,
-                                        ease: "easeOut",
-                                    }}
-                                >
-                                    <item.icon className="h-5 w-5 text-[#9E1B32] mb-4" />
-                                    <h4 className="font-medium text-[#1F2933] mb-2">
-                                        {item.title}
-                                    </h4>
-                                    <p className="font-secondary text-sm text-[#4B5563] leading-relaxed">
-                                        {item.description}
-                                    </p>
-                                </motion.div>
-                            ))}
-                        </div>
+                        </p> 
 
                         {/* CTA */}
                         <motion.div
@@ -103,20 +54,21 @@ export default function ResearchJournal() {
                             transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
                             className="mt-16"
                         >
-                            <button
-                                type="button"
+                            <Link
+                                to="/researchjournal"
                                 className="
-                  inline-flex items-center gap-2
-                  rounded-sm bg-[#7A1626]
-                  px-8 py-4
-                  font-secondary text-sm tracking-wide
-                  text-[#FFFFF0]
-                  hover:bg-[#9E1B32]
-                  transition-colors
-                "
+    inline-flex items-center gap-2
+    rounded-sm bg-[#7A1626]
+    px-8 py-4
+    font-secondary text-sm tracking-wide
+    text-[#FFFFF0]
+    hover:bg-[#9E1B32]
+    transition-colors
+  "
                             >
                                 Explore the Research Journal
-                            </button>
+                            </Link>
+
                         </motion.div>
                     </motion.div>
                 </div>
