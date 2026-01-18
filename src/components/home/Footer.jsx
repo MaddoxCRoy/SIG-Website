@@ -8,8 +8,9 @@ export default function Footer() {
 
   return (
     <footer
+      id="join"
       ref={ref}
-      className="bg-[#FFFFF0] border-t border-[#7A1626]/20"
+      className="bg-[#FFFFF0] border-t border-[#7A1626]/20 scroll-mt-24"
     >
       <div className="max-w-6xl mx-auto px-6">
         {/* CTA */}
