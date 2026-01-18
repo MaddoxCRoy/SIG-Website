@@ -24,9 +24,9 @@ const pillars = [
   },
   {
     icon: Activity,
-    title: "Active Oversight",
+    title: "Actively Managed",
     description:
-      "Weekly investment committee reviews and continuous monitoring.",
+      "Weekly investment portfolio check in and continuous monitoring.",
   },
 ];
 
@@ -71,43 +71,30 @@ export default function MStarFund() {
             </p>
 
             {/* Fund Metrics — CTA */}
+            {/* MStAR CTA */}
             <Link
               to="/mstar"
               className="
-                mt-10 block
-                transition-transform duration-300
-                hover:-translate-y-[2px]
-                hover:shadow-[0_10px_24px_rgba(0,0,0,0.25)]
-                focus:outline-none
-              "
+    mt-10 block
+    bg-[#7A1626]
+    p-6
+    transition-all duration-300
+    hover:bg-[#831A2C]
+    hover:-translate-y-[2px]
+    hover:shadow-[0_10px_24px_rgba(0,0,0,0.25)]
+    focus:outline-none
+  "
             >
-              <div className="grid grid-cols-2 gap-6 bg-[#7A1626] p-6">
-                <div>
-                  <div className="text-xl font-light text-[#FFFFF0]">
-                    Long / Short
-                  </div>
-                  <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
-                    Equity Strategy
-                  </div>
-                </div>
-
-                <div>
-                  <div className="text-xl font-light text-[#FFFFF0]">
-                    Active
-                  </div>
-                  <div className="mt-1 font-secondary text-sm text-[#FFFFF0]/80">
-                    Management Type
-                  </div>
-                </div>
-
-                {/* CTA hint */}
-                <div className="col-span-2 pt-4 border-t border-[#FFFFF0]/20">
-                  <span className="font-secondary text-xs tracking-wide text-[#FFFFF0]/70">
-                    Explore the MStAR Fund →
-                  </span>
-                </div>
+              <div className="flex items-center justify-between">
+                <span className="text-xl font-light text-[#FFFFF0]">
+                  Explore the MStAR Fund
+                </span>
+                <span className="font-secondary text-sm text-[#FFFFF0]/80">
+                  →
+                </span>
               </div>
             </Link>
+
           </motion.div>
 
           {/* Right: Pillars */}
