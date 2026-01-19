@@ -8,6 +8,7 @@ import MStarPage from "./components/mstar/MStarPage";
 import QuantPage from "./components/quant/QuantPage";
 import FundamentalPage from "./components/fundamental/FundamentalPage";
 import JournalPage from "./components/journal/JournalPage"
+import JoinPage from "./components/join/JoinPage"
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/quantitative" element={<QuantPage />} />
           <Route path="/fundamental" element={<FundamentalPage />} />
           <Route path="/researchjournal" element={<JournalPage />} />
+          <Route path="/join" element={<JoinPage />} />
         </Route>
       </Routes>
     </>

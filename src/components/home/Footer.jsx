@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, Linkedin, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   const ref = useRef(null);
@@ -29,13 +31,14 @@ export default function Footer() {
           </p>
 
           {/* Apply / Contact Button */}
-          <a
-            href="mailto:scarletinvestmentgroup@gmail.com"
+          <Link
+            to="/join"
             className="mt-10 inline-flex items-center gap-2 rounded-sm bg-[#7A1626] px-8 py-4 font-secondary text-sm tracking-wide text-[#FFFFF0] hover:bg-[#9E1B32] transition-colors"
           >
             Apply / Get in Touch
             <ArrowUpRight className="h-4 w-4" />
-          </a>
+          </Link>
+
         </motion.div>
 
         {/* Bottom Bar */}
