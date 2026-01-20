@@ -8,7 +8,7 @@ import JackHeadshot from '../../assets/JackHeadshot.jpg';
 import JuliaHeadshot from '../../assets/JuliaHeadshot.jpg';
 import MeredithHeadshot from '../../assets/MeredithHeadshot.jpg';
 import NavyaHeadshot from '../../assets/NavyaHeadshot.jpg';
-import NicholasHeadshot from '../../assets/NicholasHeadshotTemp.jpg';
+import NicholasHeadshot from '../../assets/NicholasHeadshot.jpg';
 import MaddoxHeadshot from '../../assets/MaddoxHeadshot.jpg';
 
 /* --- DATA (UNCHANGED) --- */
