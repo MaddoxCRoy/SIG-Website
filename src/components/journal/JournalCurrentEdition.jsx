@@ -4,9 +4,6 @@ import { useRef } from "react";
 /* FUTURE-PROOF DATA */
 const editions = [
   { label: "Spring 2026", status: "In Progress", active: true },
-  { label: "Fall 2025" },
-  { label: "Spring 2025" },
-  { label: "Fall 2024" },
 ];
 
 export default function JournalCurrentEdition() {

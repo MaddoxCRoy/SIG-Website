@@ -17,11 +17,13 @@ export default function FundamentalSectors() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="md:col-span-6 flex justify-center"
         >
+        <div className="w-full max-w-3xl overflow-hidden">
           <img
             src={SectorAllocationImage}
             alt="Scarlet Investment Group"
-            className="w-full max-w-3xl h-auto"
+            className="w-full h-auto scale-[1.02]"
           />
+        </div>
         </motion.div>
 
         {/* Text + Scarlet Rule */}
