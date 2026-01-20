@@ -133,33 +133,55 @@ export default function AboutEboard() {
     visible: { opacity: 1, y: 0 },
   };
 
-  const Card = ({ member }) => (
-    <motion.button
-      variants={cardVariants}
-      transition={{ duration: 0.45, ease: 'easeOut' }}
-      onClick={() => setActiveMember(member)}
-      className="flex flex-col items-center text-center group"
+const Card = ({ member }) => (
+  <motion.button
+    variants={cardVariants}
+    transition={{ duration: 0.45, ease: 'easeOut' }}
+    onClick={() => setActiveMember(member)}
+    className="
+      flex flex-col items-center text-center
+      cursor-pointer
+      group
+      focus:outline-none
+    "
+    whileHover={{ y: -4 }}
+    whileTap={{ scale: 0.98 }}
+  >
+    <div
+      className="
+        w-40 h-40 rounded-full overflow-hidden mb-4
+        bg-gray-200
+        ring-2 ring-transparent
+        group-hover:ring-[#7A1626]/60
+        transition
+        duration-200
+      "
     >
-      <div className="w-40 h-40 rounded-full overflow-hidden mb-4 bg-gray-200">
-        <div
-          className="w-full h-full"
-          style={{
-            transform: `scale(${member.zoom || 1})`,
-            transformOrigin: 'center',
-          }}
-        >
-          <img
-            src={member.image}
-            alt={member.name}
-            style={{ objectPosition: member.objectPosition || '50% 50%' }}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <div
+        className="w-full h-full transition-transform duration-200 group-hover:scale-[1.04]"
+        style={{
+          transform: `scale(${member.zoom || 1})`,
+          transformOrigin: 'center',
+        }}
+      >
+        <img
+          src={member.image}
+          alt={member.name}
+          style={{ objectPosition: member.objectPosition || '50% 50%' }}
+          className="w-full h-full object-cover"
+        />
       </div>
-      <h3 className="font-medium text-[#1F2933]">{member.name}</h3>
-      <p className="text-sm text-[#6B7280]">{member.role}</p>
-    </motion.button>
-  );
+    </div>
+
+    <h3 className="font-medium text-[#1F2933] group-hover:text-[#7A1626] transition-colors">
+      {member.name}
+    </h3>
+    <p className="text-sm text-[#6B7280]">
+      {member.role}
+    </p>
+  </motion.button>
+);
+
 
   return (
     <>
