@@ -38,6 +38,15 @@ export default function JoinTimeline() {
                     Recruitment Timeline
                 </motion.h2>
 
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={isInView ? { opacity: 1 } : {}}
+                    transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+                    className="mt-2 max-w-2xl text-[#4B5563] italic leading-relaxed"
+                >
+                    Attending one recruitment event is required
+                </motion.p>
+
                 <div className="mt-10 space-y-6">
                     {events.map((event, index) => (
                         <motion.div

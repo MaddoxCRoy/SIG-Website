@@ -27,7 +27,7 @@ export default function Footer() {
           </h2>
 
           <p className="mt-4 max-w-xl mx-auto text-[#4B5563] leading-relaxed">
-            Applications for Spring 2026 recruitment has not been opened yet. Check back soon.
+            Application, recruitment events, and more information below
           </p>
 
           {/* Apply / Contact Button */}
@@ -35,7 +35,7 @@ export default function Footer() {
             to="/join"
             className="mt-10 inline-flex items-center gap-2 rounded-sm bg-[#7A1626] px-8 py-4 font-secondary text-sm tracking-wide text-[#FFFFF0] hover:bg-[#9E1B32] transition-colors"
           >
-            Apply / Get in Touch
+            Apply
             <ArrowUpRight className="h-4 w-4" />
           </Link>
 
