@@ -78,7 +78,7 @@ export default function Layout() {
     {
       label: "Join",
       scrollTo: "/#join",
-      dropdown: null,
+      dropdown: [{ label: "Apply Now", to: "/join" }],
     },
   ];
 

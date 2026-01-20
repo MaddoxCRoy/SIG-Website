@@ -1,7 +1,7 @@
 import QuantHero from "./QuantHero";
 import QuantProcess from "./QuantProcess";
 import QuantEngagement from "./QuantEngagement";
-import QuantRole from "./QuantRole";
+import CommonFooter from "../layout/CommonFooter";
 
 export default function QuantPage() {
     return (
@@ -9,7 +9,7 @@ export default function QuantPage() {
             <QuantHero />
             <QuantProcess />
             <QuantEngagement />
-            <QuantRole />
+            <CommonFooter />
         </main>
     );
 }
