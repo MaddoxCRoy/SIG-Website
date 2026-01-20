@@ -31,8 +31,8 @@ export default function QuantProcess() {
                     transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
                     className="mt-6 max-w-xl text-[#4B5563] leading-relaxed"
                 >
-                    Quantitative research follows a disciplined pipeline designed to
-                    emphasize clarity, review, and thoughtful decision-making.
+                    Quantitative research is the process of gathering data, interpreting data, and making investment decisions with data.
+                    This includes managing risk and creating proprietary strategies.
                 </motion.p>
 
                 {/* Pipeline */}
@@ -55,16 +55,6 @@ export default function QuantProcess() {
                         </motion.div>
                     ))}
                 </div>
-
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={isInView ? { opacity: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
-                    className="mt-12 max-w-2xl text-[#4B5563] leading-relaxed"
-                >
-                    Research is iterative. Assumptions are revisited, results are questioned,
-                    and conclusions are refined through ongoing review.
-                </motion.p>
             </div>
         </section>
     );

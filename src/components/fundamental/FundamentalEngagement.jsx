@@ -23,9 +23,8 @@ export default function FundamentalEngagement() {
                     transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
                     className="mt-8 max-w-2xl text-[#4B5563] leading-relaxed"
                 >
-                    Members engage in repeated cycles of research, discussion, and review.
-                    Emphasis is placed on forming well-reasoned views and articulating
-                    underlying assumptions clearly.
+                    Members on the Fundamental Team engage with a mix of ongoing research, discussion, and structured presentations.
+                    Work is collaborative and iterative, with members contributing analysis, questioning assumptions, and refining sector views over time.
                 </motion.p>
 
                 <motion.p
@@ -34,9 +33,8 @@ export default function FundamentalEngagement() {
                     transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
                     className="mt-6 max-w-2xl text-[#4B5563] leading-relaxed"
                 >
-                    Research is collaborative and discussion-driven. Members are encouraged
-                    to challenge ideas constructively and refine conclusions through
-                    feedback rather than persuasion.
+                    As members progress, responsibilities expand from supporting research and thesis development to leading portions of sector analysis and trading.
+                    This structure allows members to develop both technical skills and investment judgment through exposure to real analytical decisions.
                 </motion.p>
             </div>
         </section>

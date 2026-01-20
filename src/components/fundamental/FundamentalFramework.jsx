@@ -3,7 +3,7 @@ import { useRef } from "react";
 
 const framework = [
     "Macroeconomic Context",
-    "Industry Structure",
+    "Industry Research",
     "Company Analysis",
     "Valuation & Assumptions",
     "Portfolio Perspective",
@@ -56,16 +56,6 @@ export default function FundamentalFramework() {
                         </motion.div>
                     ))}
                 </div>
-
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={isInView ? { opacity: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
-                    className="mt-12 max-w-2xl text-[#4B5563] leading-relaxed"
-                >
-                    Research is iterative. Assumptions are revisited as new information
-                    emerges, and conclusions evolve through ongoing discussion and review.
-                </motion.p>
             </div>
         </section>
     );

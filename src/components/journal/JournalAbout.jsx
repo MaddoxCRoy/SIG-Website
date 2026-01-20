@@ -26,16 +26,15 @@ export default function JournalAbout() {
                     className="md:col-span-8"
                 >
                     <p className="text-[#4B5563] leading-relaxed max-w-2xl">
-                        The SIG Research Journal exists to capture how the organization
-                        thinks over time. Rather than highlighting isolated conclusions,
-                        the journal reflects the process, synthesis, and intellectual
-                        development that emerge from ongoing research across the club.
+                        The SIG Research Journal showcases the research and analytical work produced by members across the organization.
+                        It serves as a curated collection of the ideas,
+                        questions, and analysis developed throughout the semester.
                     </p>
 
                     <p className="mt-6 text-[#4B5563] leading-relaxed max-w-2xl">
-                        Each edition represents a snapshot of collective thinking — shaped
-                        by collaboration, debate, and iteration — rather than a definitive
-                        statement on markets or outcomes.
+                        Each edition documents a moment in the club’s ongoing intellectual work,
+                        emphasizing judgment, synthesis, and the progression of thought over time
+                        instead of definitive market views or outcomes.
                     </p>
                 </motion.div>
             </div>

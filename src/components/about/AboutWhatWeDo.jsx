@@ -10,16 +10,11 @@ export default function AboutWhatWeDo() {
                 {/* Text */}
                 <div className="md:col-span-7">
                     <h2 className="text-2xl md:text-3xl font-light text-[#1F2933] mb-6">
-                        What we do
+                        Our Mission
                     </h2>
                     <p className="text-[#4B5563] leading-relaxed max-w-xl">
-                        Members of SIG engage in applied investment research throughout the
-                        semester, working in structured teams to analyze markets, evaluate
-                        ideas, and contribute to shared portfolio discussions.
-
-                        Work within SIG emphasizes preparation, communication, and judgment.
-                        Members are expected to develop and defend their thinking, engage
-                        with alternative viewpoints, and refine their ideas.
+                        We aim to develop the next generation of investment professionals who lead with thoughtfulness.
+                        SIG emphasizes the values of challenging assumptions, exploring nuance, and making disciplined decisions.
 
                     </p>
                 </div>

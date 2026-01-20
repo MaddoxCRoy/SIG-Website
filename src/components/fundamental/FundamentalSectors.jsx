@@ -30,19 +30,13 @@ export default function FundamentalSectors() {
                     </h2>
 
                     <p className="text-[#4B5563] leading-relaxed max-w-xl">
-                        Members are organized by industry sectors to promote continuity,
-                        accountability, and deeper understanding over time.
+                        The fundamental team is split into 8 industry sectors:
+                        Technology, Financials, Healthcare, Consumer Discretionary, Industrials, Commodities and Crypto, Energy and Utilities, Consumer Staples.
                     </p>
 
                     <p className="mt-6 text-[#4B5563] leading-relaxed max-w-xl">
-                        Senior Associates oversee sector research, guiding project direction
-                        and ensuring consistency in analytical standards and assumptions.
-                    </p>
-
-                    <p className="mt-6 text-[#4B5563] leading-relaxed max-w-xl">
-                        Projects are designed to build durable insight rather than isolated
-                        conclusions, reinforcing a long-term perspective on businesses and
-                        industries.
+                        Each sector is responsible for conducting ongoing research within
+                        its coverage area and contributing sector-level perspectives to portfolio decisions.
                     </p>
                 </motion.div>
             </div>
