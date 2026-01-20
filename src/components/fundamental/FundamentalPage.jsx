@@ -2,7 +2,7 @@ import FundamentalHero from "./FundamentalHero";
 import FundamentalFramework from "./FundamentalFramework";
 import FundamentalSectors from "./FundamentalSectors";
 import FundamentalEngagement from "./FundamentalEngagement";
-import FundamentalRole from "./FundamentalRole";
+import CommonFooter from "../layout/CommonFooter";
 
 export default function FundamentalPage() {
     return (
@@ -11,7 +11,7 @@ export default function FundamentalPage() {
             <FundamentalFramework />
             <FundamentalSectors />
             <FundamentalEngagement />
-            <FundamentalRole />
+            <CommonFooter />
         </main>
     );
 }

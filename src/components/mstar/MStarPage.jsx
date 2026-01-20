@@ -2,7 +2,7 @@ import MStarHero from "./MStarHero";
 import MStarAbout from "./MStarAbout";
 import MStarProcess from "./MStarProcess";
 import MStarInstruments from "./MStarInstruments";
-import MStarRole from "./MStarRole";
+import CommonFooter from "../layout/CommonFooter";
 
 export default function MStarPage() {
     return (
@@ -11,7 +11,7 @@ export default function MStarPage() {
             <MStarAbout />
             <MStarProcess />
             <MStarInstruments />
-            <MStarRole />
+            <CommonFooter />
         </main>
     );
 }
