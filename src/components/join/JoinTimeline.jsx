@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 const events = [
     { date: "Jan 22", title: "Involvement Fair", time: "4:00 – 7:00 PM", location: "Archie B Griffin Grand Ballroom" },
     { date: "Jan 22", title: "Info Session I", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Jan 27", title: "Resume Workshop", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
-    { date: "Jan 29", title: "Info Session II", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Feb 3", title: "Info Session III", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
-    { date: "Feb 5", title: "Meet the Members", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Jan 27", title: "Canceled", time: "", location: "" },
+    { date: "Jan 29", title: "Resume Workshop", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Feb 3", title: "Meet the Members", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
+    { date: "Feb 5", title: "Info Session II", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
     { date: "Feb 6", title: "Applications Due", time: "Due by 11:59pm", location: "" },
     { date: "Feb 9 – 12", title: "Interviews", time: "", location: "" },
 ];
