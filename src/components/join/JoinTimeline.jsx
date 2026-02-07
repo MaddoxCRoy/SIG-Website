@@ -20,16 +20,11 @@ export default function JoinTimeline() {
         <section ref={ref} className="py-16">
             <div className="pb-16">
                 <div className="max-w-6xl mx-auto px-6">
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe_KgPt7I8kmozlkgjf13hPAg58WmaehX1wAQovguiw4FH-1Q/viewform"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-[#7A1626] px-10 py-6 transition-all duration-300 hover:bg-[#9E1B32] focus:outline-none focus:ring-2 focus:ring-[#9E1B32]/50"
-                    >
+                    <div className="inline-block bg-[#7A1626] px-10 py-6 opacity-70 cursor-default">
                         <span className="font-secondary text-sm tracking-wide text-[#FFFFF0]/90">
-                            Applications Open → Apply Now
+                            Applications Closed
                         </span>
-                    </a>
+                    </div>
                 </div>
             </div>
 
