@@ -19,7 +19,7 @@ export default function JoinHero() {
                     transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
                     className="mt-8 max-w-2xl text-lg italic text-[#FFFFF0] leading-relaxed"
                 >
-                    Recruitment for the Spring 2026 semester is currently underway.
+                    Recruitment for the Spring 2026 semester has concluded.
                 </motion.p>
             </div>
         </section>
