@@ -57,7 +57,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* About Page CTA */}
+        {/* CTA */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
