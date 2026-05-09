@@ -8,10 +8,8 @@ import JackHeadshot from '../../assets/JackHeadshot.jpg';
 import JuliaHeadshot from '../../assets/JuliaHeadshot.jpg';
 import MeredithHeadshot from '../../assets/MeredithHeadshot.jpg';
 import NavyaHeadshot from '../../assets/NavyaHeadshot.jpg';
-import NicholasHeadshot from '../../assets/NicholasHeadshot.jpg';
 import MaddoxHeadshot from '../../assets/MaddoxHeadshot.jpg';
 
-/* --- DATA (UNCHANGED) --- */
 const eboard = {
   top: [
     {
@@ -35,18 +33,6 @@ const eboard = {
       email: 'kollur.1@buckeyemail.osu.edu',
       linkedin: 'https://www.linkedin.com/in/akshaykollur/',
       objectPosition: '50% 20%',
-    },
-    {
-      role: 'Treasurer',
-      name: 'Julia Nix',
-      image: JuliaHeadshot,
-      year: 'Sophomore',
-      majors: 'Finance',
-      minors: 'Accounting',
-      email: 'nix.52@buckeyemail.osu.edu',
-      linkedin: 'https://www.linkedin.com/in/julia-nix/',
-      objectPosition: '50% 30%',
-      zoom: 1,
     },
     {
       role: 'Fundamental Portfolio Manager',
@@ -75,6 +61,18 @@ const eboard = {
   ],
   bottom: [
     {
+      role: 'Treasurer',
+      name: 'Julia Nix',
+      image: JuliaHeadshot,
+      year: 'Sophomore',
+      majors: 'Finance',
+      minors: 'Accounting',
+      email: 'nix.52@buckeyemail.osu.edu',
+      linkedin: 'https://www.linkedin.com/in/julia-nix/',
+      objectPosition: '50% 30%',
+      zoom: 1,
+    },
+    {
       role: 'VP of Recruitment',
       name: 'Navya Chauhan',
       image: NavyaHeadshot,
@@ -99,18 +97,6 @@ const eboard = {
       zoom: 1.3,
     },
     {
-      role: 'VP of Operations',
-      name: 'Nicholas Nanberg',
-      image: NicholasHeadshot,
-      year: 'Freshman',
-      majors: 'Finance',
-      minors: 'Computer Science Engineering',
-      email: 'nanberg.4@buckeyemail.osu.edu',
-      linkedin: 'https://www.linkedin.com/in/nicholas-nanberg/',
-      objectPosition: '50% 30%',
-      zoom: 1,
-    },
-    {
       role: 'VP of Marketing',
       name: 'Meredith Hurley',
       image: MeredithHeadshot,
@@ -133,68 +119,47 @@ export default function AboutEboard() {
     visible: { opacity: 1, y: 0 },
   };
 
-const Card = ({ member }) => (
-  <motion.button
-    variants={cardVariants}
-    transition={{ duration: 0.45, ease: 'easeOut' }}
-    onClick={() => setActiveMember(member)}
-    className="
-      flex flex-col items-center text-center
-      cursor-pointer
-      group
-      focus:outline-none
-    "
-    whileHover={{ y: -4 }}
-    whileTap={{ scale: 0.98 }}
-  >
-    <div
-      className="
-        w-40 h-40 rounded-full overflow-hidden mb-4
-        bg-gray-200
-        ring-2 ring-transparent
-        group-hover:ring-[#7A1626]/60
-        transition
-        duration-200
-      "
+  const Card = ({ member }) => (
+    <motion.button
+      variants={cardVariants}
+      transition={{ duration: 0.45, ease: 'easeOut' }}
+      onClick={() => setActiveMember(member)}
+      className="flex flex-col items-center text-center cursor-pointer group focus:outline-none"
+      whileHover={{ y: -4 }}
+      whileTap={{ scale: 0.98 }}
     >
-      <div
-        className="w-full h-full transition-transform duration-200 group-hover:scale-[1.04]"
-        style={{
-          transform: `scale(${member.zoom || 1})`,
-          transformOrigin: 'center',
-        }}
-      >
-        <img
-          src={member.image}
-          alt={member.name}
-          style={{ objectPosition: member.objectPosition || '50% 50%' }}
-          className="w-full h-full object-cover"
-        />
+      <div className="w-40 h-40 rounded-full overflow-hidden mb-4 bg-gray-200 ring-2 ring-transparent group-hover:ring-[#7A1626]/60 transition duration-200">
+        <div
+          className="w-full h-full transition-transform duration-200 group-hover:scale-[1.04]"
+          style={{
+            transform: `scale(${member.zoom || 1})`,
+            transformOrigin: 'center',
+          }}
+        >
+          <img
+            src={member.image}
+            alt={member.name}
+            style={{ objectPosition: member.objectPosition || '50% 50%' }}
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
-    </div>
-
-    <h3 className="font-medium text-[#1F2933] group-hover:text-[#7A1626] transition-colors">
-      {member.name}
-    </h3>
-    <p className="text-sm text-[#6B7280]">
-      {member.role}
-    </p>
-  </motion.button>
-);
-
+      <h3 className="font-medium text-[#1F2933] group-hover:text-[#7A1626] transition-colors">
+        {member.name}
+      </h3>
+      <p className="text-sm text-[#6B7280]">{member.role}</p>
+    </motion.button>
+  );
 
   return (
     <>
-      {/* SECTION */}
       <section className="py-32 bg-[#FFFFF0]">
         <motion.div
-          className="max-w-6xl mx-auto px-6"
+          className="max-w-5xl mx-auto px-6"
           initial={false}
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          variants={{
-            visible: { transition: { staggerChildren: 0.12 } },
-          }}
+          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
         >
           <motion.h2
             variants={cardVariants}
@@ -204,9 +169,8 @@ const Card = ({ member }) => (
             Executive Board
           </motion.h2>
 
-          {/* Top Row */}
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-12 justify-center mb-20"
+            className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-20"
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {eboard.top.map((member) => (
@@ -214,9 +178,8 @@ const Card = ({ member }) => (
             ))}
           </motion.div>
 
-          {/* Bottom Row */}
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 justify-center"
+            className="grid grid-cols-2 md:grid-cols-4 gap-12"
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {eboard.bottom.map((member) => (
@@ -226,7 +189,6 @@ const Card = ({ member }) => (
         </motion.div>
       </section>
 
-      {/* MODAL (ISOLATED — FIXES DISAPPEARING BUG) */}
       <AnimatePresence>
         {activeMember && (
           <motion.div
@@ -248,10 +210,8 @@ const Card = ({ member }) => (
               >
                 ✕
               </button>
-
               <h3 className="text-xl font-medium mb-1">{activeMember.name}</h3>
               <p className="text-sm text-gray-500 mb-4">{activeMember.role}</p>
-
               <div className="space-y-2 text-sm text-[#374151]">
                 <p><strong>Year:</strong> {activeMember.year}</p>
                 <p><strong>Major(s):</strong> {activeMember.majors}</p>
@@ -259,7 +219,6 @@ const Card = ({ member }) => (
                   <p><strong>Minor(s):</strong> {activeMember.minors}</p>
                 )}
               </div>
-
               <div className="mt-6 flex gap-4">
                 <a
                   href={`mailto:${activeMember.email}`}
