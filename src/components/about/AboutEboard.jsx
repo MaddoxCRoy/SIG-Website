@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import AkanshaHeadshot from '../../assets/AkanshaHeadshot.jpg';
-import AkshayHeadshot from '../../assets/AkshayHeadshot.jpg';
+import IshanHeadshot from '../../assets/IshanHeadshot.jpeg';
 import DylanHeadshot from '../../assets/DylanHeadshot.png';
 import JackHeadshot from '../../assets/JackHeadshot.jpg';
 import JuliaHeadshot from '../../assets/JuliaHeadshot.jpg';
