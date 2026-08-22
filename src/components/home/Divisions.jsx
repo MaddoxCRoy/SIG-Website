@@ -133,9 +133,9 @@ export default function Divisions() {
             Our Structure
           </span>
           <h2 className="text-3xl md:text-4xl font-light text-[#1F2933] max-w-2xl">
-            Two pillars.
+            Fundamental Insight.
             <br />
-            One mission.
+            Quantitative Precision.
           </h2>
         </motion.div>
 
