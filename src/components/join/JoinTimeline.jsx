@@ -2,14 +2,13 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const events = [
-    { date: "Jan 22", title: "Involvement Fair", time: "4:00 – 7:00 PM", location: "Archie B Griffin Grand Ballroom" },
-    { date: "Jan 22", title: "Info Session I", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Jan 27", title: "Canceled", time: "", location: "" },
-    { date: "Jan 29", title: "Resume Workshop", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Feb 3", title: "Meet the Members", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
-    { date: "Feb 5", title: "Info Session II", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Feb 6", title: "Applications Due", time: "Due by 11:59pm", location: "" },
-    { date: "Feb 9 – 12", title: "Interviews", time: "", location: "" },
+    { date: "Aug 23", title: "Campus-Wide Involvement Fair", time: "", location: "" },
+    { date: "Aug 25", title: "Info Session I", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Aug 27", title: "Women in SIG", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Sep 1", title: "Technical + Resume Workshop", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Sep 3", title: "Info Session II", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Sep 4", title: "Round 1 Video Application Due", time: "Due by 11:59pm", location: "" },
+    { date: "Sep 9", title: "Interviews Begin", time: "", location: "" },
 ];
 
 export default function JoinTimeline() {
@@ -22,7 +21,7 @@ export default function JoinTimeline() {
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="inline-block bg-[#7A1626] px-10 py-6 opacity-70 cursor-default">
                         <span className="font-secondary text-sm tracking-wide text-[#FFFFF0]/90">
-                            Applications Closed
+                            Applications Not Yet Open
                         </span>
                     </div>
                 </div>
