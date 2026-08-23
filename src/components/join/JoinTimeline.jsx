@@ -19,11 +19,16 @@ export default function JoinTimeline() {
         <section ref={ref} className="py-16">
             <div className="pb-16">
                 <div className="max-w-6xl mx-auto px-6">
-                    <div className="inline-block bg-[#7A1626] px-10 py-6 opacity-70 cursor-default">
+                    <a
+                        href="https://forms.gle/vVHExcNcTtpd9bm28"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-[#7A1626] px-10 py-6 hover:bg-[#9E1B32] transition-colors duration-200"
+                    >
                         <span className="font-secondary text-sm tracking-wide text-[#FFFFF0]/90">
-                            Applications Not Yet Open
+                            Apply Now
                         </span>
-                    </div>
+                    </a>
                 </div>
             </div>
 
