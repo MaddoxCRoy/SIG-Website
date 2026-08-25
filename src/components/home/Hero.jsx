@@ -84,7 +84,7 @@ export default function Hero() {
           <div className="w-12 h-px bg-[#9E1B32] mx-auto mb-6" />
 
           <p className="text-base md:text-lg text-[#4B5563] font-light leading-relaxed max-w-2xl mx-auto">
-            The premier multi-strategy investment organization
+            The only multi-strategy investment organization
             <br className="hidden md:block" />
             at The Ohio State University
           </p>
