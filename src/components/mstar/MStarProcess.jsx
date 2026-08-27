@@ -6,7 +6,7 @@ export default function MStarDecisionProcess() {
   const isInView = useInView(ref, { once: true, margin: "-120px" });
 
   return (
-    <section ref={ref} className="py-36 bg-[#FFFFF0]">
+    <section ref={ref} className="py-28 bg-[#FFFFF0]">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         {/* Heading */}
