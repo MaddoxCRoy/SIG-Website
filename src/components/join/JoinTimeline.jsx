@@ -8,7 +8,7 @@ const events = [
     { date: "Sep 1", title: "Technical + Resume Workshop", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
     { date: "Sep 3", title: "Info Session II", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
     { date: "Sep 4", title: "Round 1 Video Application Due", time: "Due by 11:59pm", location: "" },
-    { date: "Sep 9", title: "Interviews Begin", time: "", location: "" },
+    { date: "Sep 8", title: "Interviews Begin", time: "", location: "" },
 ];
 
 export default function JoinTimeline() {
