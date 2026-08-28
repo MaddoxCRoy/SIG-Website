@@ -5,8 +5,8 @@ const events = [
     { date: "Aug 23", title: "Campus-Wide Involvement Fair", time: "", location: "" },
     { date: "Aug 25", title: "Info Session I", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
     { date: "Aug 27", title: "Women in SIG", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Sep 1", title: "Technical + Resume Workshop", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
-    { date: "Sep 3", title: "Info Session II", time: "6:00 – 7:00 PM", location: "Houston Grove Room" },
+    { date: "Sep 1", title: "Technical + Resume Workshop", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
+    { date: "Sep 3", title: "Info Session II", time: "7:00 – 8:00 PM", location: "Houston Grove Room" },
     { date: "Sep 4", title: "Round 1 Video Application Due", time: "Due by 11:59pm", location: "" },
     { date: "Sep 9", title: "Interviews Begin", time: "", location: "" },
 ];
